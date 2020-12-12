@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 
 namespace APIGateway
 {
@@ -26,10 +28,11 @@ namespace APIGateway
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddOcelot();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -46,6 +49,8 @@ namespace APIGateway
             {
                 endpoints.MapControllers();
             });
+
+            await app.UseOcelot();
         }
     }
 }

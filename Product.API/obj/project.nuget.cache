@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SjsJPIANVq0ORlF9ZKr4PFdFSQ7et7NO6dkKrYVkbazF4UvCj/Ei3rG5KjAYw5EV6wd6muY88RrfDQxTCWgVsA==",
+  "dgSpecHash": "c3o1rcZklpqIFkk/xGvOIRLyBp/K66XjcNAThZSiYFQyOIHMEv8iFLnw42/IDgjsHopUwWt7vp/BPrbTZjCS9Q==",
   "success": true,
   "projectFilePath": "/Users/gkhnatn/Projects/C#/Practices/dotnetcore-ocelot-implementation/Product.API/Product.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/gkhnatn/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }

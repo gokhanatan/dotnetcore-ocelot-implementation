@@ -28,6 +28,7 @@ namespace Product.API.Controllers
             return Ok(_products);
         }
 
+ [      Route("add")]
         public IActionResult Add(Models.Product product)
         {
             _products.Add(product);

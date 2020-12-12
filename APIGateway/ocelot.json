@@ -1,0 +1,55 @@
+{
+    "Routes": [
+        {
+        "DownstreamPathTemplate": "/api/categories/getall",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "localhost",
+                "Port": 36100
+            }
+        ],
+        "UpstreamPathTemplate": "/categories/getall",
+        "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/categories/add",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 36100
+                }
+            ],
+            "UpstreamPathTemplate": "/categories/add",
+            "UpstreamHttpMethod": [ "Post" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/products/getall",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 60031
+                }
+            ],
+            "UpstreamPathTemplate": "/products/getall",
+            "UpstreamHttpMethod": [ "Get" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/products/add",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 60031
+                }
+            ],
+            "UpstreamPathTemplate": "/products/add",
+            "UpstreamHttpMethod": [ "Post" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000"
+    }
+}
